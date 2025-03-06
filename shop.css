@@ -1,0 +1,243 @@
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+#johnlogo{
+max-width:120px;
+height:auto
+}
+#side-img{
+    float: right;
+}
+#nav-icons{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index: 1000;
+display:flex;
+align-items:center;
+}
+nav ul li{
+    display:inline-block;
+}
+nav{
+        text-align: center;
+}
+li{
+        margin: 0px 10px;
+        height: 50px;
+        width:100px;
+        line-height:3;
+ }
+ .home{
+    padding:10% 20%;
+    background-image:url(shophomeimage.webp)
+   
+ }
+ #text h5{
+    color:#e30d0d;
+ }
+ h1{
+    font-size: 50px;
+ }
+ .home p{
+font-style: italic;
+ }
+ #btn{
+    border-block:soild 2px #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding:12px 25px;
+    color:#111;
+    display: inline-block;
+ }
+ #btn:hover{
+   background-color: #111;
+   color:#fff
+ }
+ #btn i{
+   vertical-align: middle;
+ }
+ #down-arrow{
+   /* position: absolute; */
+   position: fixed;
+   top:85%;
+   right:11%;
+   font-size: 30px;
+   color:#111;
+ }
+ #down-arrow:hover{
+background-color: #111;
+color:#fff;
+transition: all, 40s ease;
+ }
+ header.sticky{
+   background: #fff;
+   padding:20px 10%;
+   box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+ }
+ #product p{
+   text-align: center;
+   padding:15 10px;
+   font-size: 30px;
+ }
+#product span{
+color:#ea0c0c
+}
+#row img:hover{
+transform: scale(0.7);
+}
+.products{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+}
+#row{
+   position: relative;
+   transition: all .40s;
+}
+#heart-icon:hover{
+   color: #e30d0d;
+}
+#ratting{
+color:#b1990f;
+font-size:16px;
+text-transform: capitalize;
+}
+.row img:hover{
+   transform: scale(0.9);
+}
+#price h4{
+   color:#111;
+   font-style: oblique;
+}
+#price p{
+color:#111;
+font-size: 13px;
+}
+#products-text h5{
+   font-style:italic ;
+   color:#17ba2d
+}
+.trend-product{
+   text-align: center;
+}
+#client-img{
+   border-radius: 50px;
+   height:auto;
+   width: 100px;
+   margin: 10px 0px;
+}
+#Reviews{
+   text-align: center;
+}
+.products{
+   padding: 20px;
+}
+.client{
+   background-color: #f3f4f6;
+}
+#Reviews h3{
+   font-size: 22px;
+   color:#111;
+   margin-bottom: 2px;
+}
+#Reviews p{
+   color:#707070;
+   font-size: 16px;
+line-height:25px ;
+margin-bottom: 10px;
+}
+#Reviews h2{
+   color:#000;
+   font-size:23px;
+margin-bottom: 2px;
+}
+/*News Update*/
+.New-updates{
+   padding:30px;
+
+   display: flex;
+   
+}
+#News h2{
+ text-align: center;
+    margin-bottom: 30px;
+   color:#111;
+}
+.New img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 8px;
+}
+.new{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 20px;
+}
+.New-updates h5{
+   color:#636872;
+   font-size: 13px;
+}
+.New-updates h4{
+color:#111;
+font-size:17px ;
+}
+.New-updates p{
+   color:#707070;
+   font-size: 15px;
+}
+.New-updates h6{
+   color: #151515;
+   font-size: 14px;
+}
+/*contact details*/
+.contact{
+   background-color: #f3f4f6;
+   padding:30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.contact h4{
+color:#212529;
+font-size: 14px;
+margin-bottom: 10px;
+}
+.contact p{
+   color:#565656;
+   font-size: 14px;
+   line-height: 1.5;
+   margin-bottom:10px;
+   transition: all .42s;
+}
+.contact p:hover{
+   color:#EE1c47;
+}
+/*footer*/
+footer{
+   background-color: #eddff1;
+   text-align: center;
+   padding:20px
+}
+
+
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+nav { background: #333; padding: 10px; }
+.menu { display: flex; justify-content: space-between; align-items: center; }
+.menu ul { list-style: none; padding: 0; margin: 0; display: flex; }
+.menu ul li { margin: 0 15px; }
+.menu ul li a { color: white; text-decoration: none; font-size: 18px; }
+.hamburger { display: none; font-size: 24px; color: white; cursor: pointer; }
+@media (max-width: 768px) {
+    .menu ul { display: none; flex-direction: column; position: absolute; top: 50px; left: 0; background: #333; width: 100%; }
+    .menu ul.show { display: flex; }
+    .menu ul li { text-align: center; padding: 10px 0; }
+    .hamburger { display: block; }
+}
